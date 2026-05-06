@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | My College Diary</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: "Times New Roman", Times, serif; 
+        }
+        
+        body { 
+            background-color: pink;
+            color: white; 
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header { 
+            padding: 20px 60px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 4px solid pink; 
+        }
+        
+        header h1 a {
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 25px; 
+            font-size: 20px; 
+            font-weight: bold; 
+        }
+        
+        nav a:hover { 
+            text-decoration: underline; 
+            color: black; 
+            transition: 0.3s; 
+        }
+
+        .container { 
+            flex: 1;
+            padding: 50px 10%; 
+            text-align: center; 
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+            margin-bottom: 60px;
+        }
+
+        .gallery-item { 
+            background: white; 
+            border: 4px solid white; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 12px 12px 0px black; 
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .gallery-item:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 18px 18px 0px black; 
+        }
+        
+        .gallery-item img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover; 
+            border-bottom: 3px solid rgb(6, 98, 4);
+            display: block; 
+        }
+        
+        .caption { 
+            padding: 20px; 
+            color: black; 
+            background-color: #fff;
+            text-align: left;
+        }
+
+        .caption h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color:pink;
+        }
+
+        .caption p {
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        footer { 
+            padding: 20px; 
+            border-top: 4px solid black; 
+            text-align: center; 
+            font-weight: bold; 
+            background-color: black;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My College Diary</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a>
+            <a href="diary.html">Diary</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="gallery-item">
+                <img src="birth.jpg" alt="Rose HBD!">
+                <div class="caption">
+                    <h3>My friend's birthday!</h3>
+                    <p>We celebrate rose's birthday at MCDO</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="exhibit.jpg" alt="2nd year">
+                <div class="caption">
+                    <h3>EXHIBIT!!</h3>
+                    <p>It’s our awarding time. It was a good experience because we were able to complete the exhibit until this day !</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="first day.jpg" alt="school day">
+                <div class="caption">
+                    <h3>First Day of School</h3>
+                    <p>First day of school and I already made new friends in my new school. This is my second school because I am a transferee.</p>
+                    </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="intros.jpg" alt="firstcode">
+                <div class="caption">
+                    <h3>INTRAMUROS!</h3>
+                    <p>My circle of friends and I went to Intramuros for a project in one of our subjects.</p>
+                    </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="it week.jpg" alt="religion">
+                <div class="caption">
+                    <h3>IT WEEK!</h3>
+                    <p>I played at the first-year booth, and it was exciting because you can win prizes when you win.</p>
+                    </div>
+            </div>
+
+             <div class="gallery-item">
+                <img src="mcdo.jpg" alt="Cheerdance">
+                <div class="caption">
+                    <h3>MCDO!</h3>
+                    <p>My friends and I like to eat at McDo because it’s close to CSTA!</p>
+                    </div>
+            </div>
+                  <div class="gallery-item">
+                <img src="p.e.jpg" alt="Cheerdance">
+                <div class="caption">
+                    <h3>P.E DAY!</h3>
+                    <p>My friends and I like to take pictures even after our P.E. class.!</p>
+                    </div>
+            </div>
+       
+ <div class="gallery-item">
+                <img src="play.jpg" alt="school day">
+                <div class="caption">
+                    <h3>PLAY!</h3>
+                    <p>I played at the first-year booth, and it was exciting because you can win prizes when you win!</p>
+                    </div>
+            </div>
+ <div class="gallery-item">
+                <img src="project.jpg" alt="Cheerdance">
+                <div class="caption">
+                    <h3>EXHIBIT DAY!</h3>
+                    <p>My groupmates and I worked hard to reach the exhibit day. We created an attendance monitoring system with a sensor.!</p>
+                    </div>
+            </div>
+ <div class="gallery-item">
+                <img src="sereach.jpg" alt="Cheerdance">
+                <div class="caption">
+                    <h3>RESEARCH!</h3>
+                    <p>This is our research, and we are working on our documents.!</p>
+                    </div>
+            </div>
+
+
+
+
